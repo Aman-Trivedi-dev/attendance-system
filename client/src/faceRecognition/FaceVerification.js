@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
-import * as faceapi from 'face-api.js';
+import * as faceapi from 'face-api.js/dist/face-api.min.js';
 import { loadModels, detectFace, drawDetections, checkImageQuality } from './FaceEngine';
 import { LivenessDetector } from './LivenessDetector';
 import API from '../api/axios';
