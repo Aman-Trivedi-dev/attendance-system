@@ -268,7 +268,7 @@ export default function Students() {
                 {camStatus === 'capturing' && '🔍 Detecting face landmarks...'}
                 {camStatus === 'checking'  && '🔎 Checking for duplicate faces...'}
                 {camStatus === 'duplicate' && '⚠️ Duplicate face detected!'}
-                {camStatus === 'done'      && '✅ Face saved to MongoDB!'}
+                {camStatus === 'done'      && '✅ Face saved'}
                 {camStatus === 'error'     && '❌ Face save failed — check server connection'}
               </div>
 
