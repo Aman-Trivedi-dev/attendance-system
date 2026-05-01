@@ -136,7 +136,7 @@ export default function MarkAttendance() {
     if (savedCount > 0) {
       setSaved(true);
       setSaveResult({ saved: savedCount, failed: failedCount });
-      showToast(`✅ Attendance saved! ${savedCount} records saved to MongoDB`);
+      showToast(`✅ Attendance saved! ${savedCount} records saved`);
     } else {
       showToast('❌ Failed to save attendance — check server connection', 'error');
     }
@@ -296,7 +296,7 @@ export default function MarkAttendance() {
         {loading ? (
           <div className="bg-white rounded-xl border border-gray-200 p-12 text-center">
             <div className="text-3xl animate-spin inline-block mb-2">⚙️</div>
-            <p className="text-gray-500">Loading students from MongoDB...</p>
+            <p className="text-gray-500">Loading...</p>
           </div>
         ) : classStudents.length === 0 ? (
           <div className="bg-white rounded-xl border border-gray-200 p-12 text-center">
@@ -501,7 +501,7 @@ export default function MarkAttendance() {
               ? 'bg-green-600 hover:bg-green-700'
               : 'bg-green-600 hover:bg-green-700 hover:shadow-lg active:scale-95'
           } disabled:opacity-50`}>
-          {saving ? '⏳ Saving to MongoDB...' :
+          {saving ? '⏳ Saved..' :
            saved   ? '✅ Saved! Click to Update' :
                      '💾 Save Attendance'}
         </button>
