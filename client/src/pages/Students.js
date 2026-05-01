@@ -334,7 +334,7 @@ export default function Students() {
                     <p className="font-semibold mb-1">💡 Important:</p>
                     <p>• Each student must have a <strong>unique face</strong></p>
                     <p>• System will block duplicate face registrations</p>
-                    <p>• Face data saved permanently in MongoDB</p>
+                    <p>• Face data saved permanently</p>
                   </div>
 
                   <div className="flex gap-3">
@@ -386,7 +386,7 @@ export default function Students() {
               <div className="md:col-span-3">
                 <button type="submit"
                   className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg text-sm font-medium">
-                  Add to MongoDB
+                  Add
                 </button>
               </div>
             </form>
@@ -404,7 +404,7 @@ export default function Students() {
         {loading ? (
           <div className="bg-white rounded-xl border border-gray-200 p-12 text-center">
             <div className="text-3xl mb-2 animate-spin inline-block">⚙️</div>
-            <p className="text-gray-500">Loading from MongoDB...</p>
+            <p className="text-gray-500">Loading...</p>
           </div>
         ) : (
           <div className="bg-white rounded-xl border border-gray-200 overflow-hidden mb-4">

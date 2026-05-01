@@ -26,7 +26,7 @@ export default function Login() {
     try {
       const { data } = await API.post('/auth/login', { email, password });
       login(data);
-      navigate('/');
+      navigate('/dashboard'); // ✅ updated from '/' to '/dashboard'
     } catch (err) {
       setError(err.response?.data?.message || 'Invalid email or password');
     } finally {
